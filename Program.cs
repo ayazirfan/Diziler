@@ -6,17 +6,20 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Birsayı Giriniz:");
-        int limit = Convert.ToInt32(Console.ReadLine());
-        int[] sayilar = new Dizi().Olustur(limit);
+        // Console.WriteLine("Birsayı Giriniz:");
+        // int limit = Convert.ToInt32(Console.ReadLine());
+        // int[] sayilar = new Dizi().Olustur(limit);
 
-         System.Console.WriteLine(sayilar.Reverse());
 
+        // Console.WriteLine("\n Enbüyük: {0}", Dizi.EnBuyuk(sayilar) );
+        // System.Console.WriteLine("\n Enküçük: {0}", Dizi.EnKucuk(sayilar) );
+
+        System.Console.Write("Bir n değeri giriniz:");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] X = new Dizi().Olustur(n);
         
+        System.Console.WriteLine("\nDizinin Aritmetik ortalaması: {0:F2}", Dizi.AritmetikOrtalama(X));
         
-
-        Console.WriteLine("\n Enbüyük: {0}", Dizi.EnBuyuk(sayilar) );
-        System.Console.WriteLine("\n Enküçük: {0}", Dizi.EnKucuk(sayilar) );
 
     }
    
