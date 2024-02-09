@@ -19,6 +19,9 @@ internal class Program
         int[] X = new Dizi().Olustur(n);
         
         System.Console.WriteLine("\nDizinin Aritmetik ortalaması: {0:F2}", Dizi.AritmetikOrtalama(X));
+        System.Console.WriteLine("\nDizinin Standart sapması: {0:F2}", Dizi.StandartSapma(X));
+
+
         
 
     }

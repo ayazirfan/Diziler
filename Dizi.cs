@@ -66,6 +66,27 @@ public class Dizi
                 toplam+=X[i];                
             }return toplam/X.Length;            
         }
+        
+        /// <summary>
+    /// Parametre olarak aldığı Dizinin standart sapmasını hesaplar
+    /// </summary>
+    /// <param name="X">Dizi</param>
+    /// <returns>Standart Sapma</returns>
+    public static double StandartSapma (int[] X )
+    {
+        double aritmetikOrtalama =AritmetikOrtalama (X);
+        double t=0, f=0;
+        
+        for (int i = 0; i < X.Length; i++)
+        {
+            f= X[i]- aritmetikOrtalama;
+            t+= Math.Pow(f,2);           
+        }        
+        return Math.Sqrt(t/(X.Length-1));
+
+    }
+
+    
 
 
 
